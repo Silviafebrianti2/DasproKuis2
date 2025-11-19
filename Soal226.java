@@ -10,17 +10,17 @@ public class Soal226 {
 
         Scanner sc = new Scanner(System.in);
 
-        // 1. Input jumlah kota dan jumlah hari
+        // Input jumlah kota dan jumlah hari
         System.out.print("Masukkan jumlah kota (k): ");
         int k = sc.nextInt();
 
         System.out.print("Masukkan jumlah hari (h): ");
         int h = sc.nextInt();
 
-        // 2. Deklarasi array 2D
+        // Deklarasi array 2D
         double[][] suhu = new double[k][h];
 
-        // 3. Input data suhu setiap kota
+        // Input data suhu setiap kota
         System.out.println("\n=== Input Data Suhu ===");
         for (int i = 0; i < k; i++) {
             System.out.println("Kota " + (i + 1) + ":");
@@ -35,7 +35,7 @@ public class Soal226 {
 
         System.out.println("\n=== HASIL PER KOTA ===");
 
-        // 4. Hitung max, min, dan rata-rata untuk tiap kota
+        // Hitung max, min, dan rata-rata untuk tiap kota
         for (int i = 0; i < k; i++) {
             double max = suhu[i][0];
             double min = suhu[i][0];
@@ -58,7 +58,7 @@ public class Soal226 {
             System.out.println("  Rata-rata     : " + rata2[i]);
         }
 
-        // 5. Menentukan kota dengan rata-rata tertinggi dan terendah
+        // Menentukan kota dengan rata-rata tertinggi dan terendah
         int idxMax = 0, idxMin = 0;
 
         for (int i = 1; i < k; i++) {
